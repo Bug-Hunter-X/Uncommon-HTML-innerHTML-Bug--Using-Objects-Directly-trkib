@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    const myObject = { message: "Hello!" };
+    // Correctly using innerHTML with stringified object
+    document.getElementById("myDiv").innerHTML = JSON.stringify(myObject);
+  </script>
+</body>
+</html>
